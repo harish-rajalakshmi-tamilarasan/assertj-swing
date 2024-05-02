@@ -252,4 +252,12 @@ public class JOptionPaneFixture extends AbstractContainerFixture<JOptionPaneFixt
     driver().requireOptions(target(), options);
     return this;
   }
+
+  /**
+   * @return the message of this fixture's {@code JOptionPane}.
+   */
+  @Nullable
+    public String message() {
+        return ((String) this.target().getMessage());
+    }
 }
